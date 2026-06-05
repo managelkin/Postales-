@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-serif: "Source Serif 4", Georgia, serif;
+  --font-cond: "Barlow Condensed", sans-serif;
+  
+  --color-ink: #1a1a1a;
+  --color-ink2: #2A2820;
+  --color-gris: #555555;
+  --color-gris2: #777777;
+  --color-arena: #ffffff;
+  --color-arena2: #e0e0e0;
+  --color-crema: #ffffff;
+  --color-terracota: #C04F36;
+  --color-terracota2: #E30613;
+  --color-dorado: #9A7535;
+  --color-olive: #5A5A40;
+}
+
+body {
+  background-color: #FAF9F6; /* Premium editorial paper background */
+  color: var(--color-ink);
+  font-family: var(--font-serif);
+}
+
+/* Custom CSS helper utilities for the interactive card flippers and animations */
+.perspective-900 {
+  perspective: 900px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  animation: ticker-scroll 30s linear infinite;
+}

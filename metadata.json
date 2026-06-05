@@ -1,0 +1,6 @@
+{
+  "name": "Postales al Papa Leon XIV",
+  "description": "Un proyecto documental donde ciudadanos de Lambayeque escriben al Papa Leon XIV desde los lugares donde vivio, rezo y camino en el norte peruano.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
